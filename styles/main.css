@@ -23,6 +23,7 @@ body {
 .animate__fadeInRight {
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-delay: 0.2s;
 }
 
 
@@ -128,7 +129,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 115px 0px;
+    padding: 115px 20px;
     background-color: #fff;
     background: url("../img/back.png") no-repeat;
     background-size: cover;
@@ -159,12 +160,14 @@ button:hover {
 
 .about-section__images {
     position: relative;
+    display: flex;
 }
 
 .about-section__photo_sun {
     position: relative;
     top: 0px;
     left: 0px;
+    align-self: flex-start;
 }
 
 /*Form Section*/
@@ -305,6 +308,11 @@ input {
         width: 75px;
         height: 75px;
     }
+
+    .about-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
@@ -319,6 +327,11 @@ input {
         padding-right: 20px;
         /* padding-top: 50px;
         padding-bottom: 50px; */
+    }
+
+    .about-section{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .about-section__title {
