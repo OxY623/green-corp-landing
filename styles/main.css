@@ -128,3 +128,99 @@ button:hover {
 .about-section__info {
     max-width: 550px;
 }
+
+/*Form Section*/
+
+.form{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #1D263A;
+    color: #fff;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    text-align: center;
+}
+
+.form__container {
+    max-width: 550px;
+}
+
+.form__title{
+    font-size: 48px;
+}
+
+.form_paragraph{
+    font-size: 18px;
+    opacity: 0.65;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group label {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.form select, .form input {
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+    padding: 0 2opx;
+    border-radius: 15px;
+    border: none;
+}
+
+.form__submit {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+select {
+  appearance: none;
+}
+
+input {
+  outline: none;
+}
+
+/*Footer*/
+.footer {
+    padding: 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright{
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.5;
+}
+
+.footer__group{
+    margin-right: 80px;
+}
+.footer__group h3 {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.footer__links{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    gap: 15px;
+}

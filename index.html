@@ -34,21 +34,109 @@
         <button class="header__btn btn">Log In</button>
     </div> -->
     </header>
-    <about>
+    <main>
       <section class="about-section">
         <div classname="about-section__info">
-            <h1 class="about-section__title">Солнечные панели GreenRobotic</h1>
-            <p class="about-section__subtitle">Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <button class="about-section__button button">Узнать подробнее</button>
+          <h1 class="about-section__title">Солнечные панели GreenRobotic</h1>
+          <p class="about-section__subtitle">
+            Производите дешёвую экологически чистую электроэнергию из солнечного
+            света
+          </p>
+          <button class="about-section__button button">Узнать подробнее</button>
         </div>
         <div classname="about-section__images">
-            <img src="img/sun.png" alt="image sun" class="about-section__photo_sun sun"/>
-            <img src="img/solar-panel.png" alt="solar panels" class="about-section__photo_panel photo_panel"/>
+          <img
+            src="img/sun.png"
+            alt="image sun"
+            class="about-section__photo_sun sun"
+          />
+          <img
+            src="img/solar-panel.png"
+            alt="solar panels"
+            class="about-section__photo_panel photo_panel"
+          />
         </div>
       </section>
-    </about>
-    <footer>
-      <p>Footer</p>
+
+      <section class="form">
+        <div class="form__container">
+          <h2 class="form__title">Оставьте свои контакты</h2>
+          <p class="form_paragraph">
+            Поможем подобрать модель. Выбрать удобный вариант доставки и
+            установки. Гарантия возврата денег.
+          </p>
+
+          <form action="#">
+            <div class="form__group">
+              <label for="name"> Ваше имя: </label>
+              <input id="name" type="text" placeholder="Введите имя" required />
+            </div>
+            <div class="form__group">
+              <label for="email"> Электронный адрес: </label>
+              <input
+                id="email"
+                placeholder="Электронный адрес"
+                type="mail"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="tel"> Номер телефона: </label>
+              <input
+                id="tel"
+                type="tel"
+                placeholder="7(999) 999-99-99"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="budget"> Примерный бюджет: </label>
+              <select name="budget" id="budget" required>
+                <option value="" selected disabled hidden>
+                  Выберите вариант
+                </option>
+                <option value="10-30">10 000₽ – 30 000₽</option>
+                <option value="30-60">30 000₽ – 60 000₽</option>
+                <option value="60-100">60 000₽ – 100 000₽</option>
+                <option value="100+">100 000₽</option>
+              </select>
+            </div>
+
+            <button class="form__submit" type="select">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- /*first block*/ -->
+        <div class="footer__group">
+          <h3>Позвонить нам:</h3>
+          <div class="footer__links">
+            <a href="tel:74959999999">+7 (495) 999-99-99</a>
+          </div>
+        </div>
+        <!-- /*Second block*/ -->
+        <div class="footer__group">
+          <h3>Решения для дома:</h3>
+          <div class="footer__links">
+            <a href="#">Солнечные панели GreenRobotic</a>
+            <a href="#">Системы солнечных панелей GreenStation</a>
+          </div>
+        </div>
+        <!-- /*Third block*/ -->
+        <div class="footer__group">
+          <h3>Компания</h3>
+          <div class="footer__links">
+            <a href="#">Контакты</a>
+            <a href="#">Вакансии</a>
+            <a href="#">СМИ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>GreenCorp © 2021</p>
+      </div>
     </footer>
   </body>
 </html>
