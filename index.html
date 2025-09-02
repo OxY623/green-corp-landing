@@ -8,8 +8,20 @@
       rel="preconnect"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Солнечные панели GreenRobotic" />
+    <meta name="keywords" content="солнечные панели, солнечная энергия" />
+    <meta name="author" content="GreenCorp" />
   </head>
   <body>
     <header class="header">
@@ -36,18 +48,21 @@
     </header>
     <main>
       <section class="about-section">
-        <div classname="about-section__info">
+        <div classname="about-section__info animate__animated animate__fadeInLeft">
           <h1 class="about-section__title">Солнечные панели GreenRobotic</h1>
           <p class="about-section__subtitle">
             Производите дешёвую экологически чистую электроэнергию из солнечного
             света
           </p>
-          <button class="about-section__button button">Узнать подробнее</button>
+          <button class="about-section__button button">
+            Узнать подробнее
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-        <div classname="about-section__images">
+        <div classname="about-section__images animate__animated animate__fadeInRight">
           <img
             src="img/sun.png"
-            alt="image sun"
+            alt="sun"
             class="about-section__photo_sun sun"
           />
           <img
@@ -109,14 +124,14 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <!-- /*first block*/ -->
+        <!-- /* First block */ -->
         <div class="footer__group">
           <h3>Позвонить нам:</h3>
           <div class="footer__links">
             <a href="tel:74959999999">+7 (495) 999-99-99</a>
           </div>
         </div>
-        <!-- /*Second block*/ -->
+        <!-- /* Second block */ -->
         <div class="footer__group">
           <h3>Решения для дома:</h3>
           <div class="footer__links">
@@ -124,7 +139,7 @@
             <a href="#">Системы солнечных панелей GreenStation</a>
           </div>
         </div>
-        <!-- /*Third block*/ -->
+        <!-- /* Third block */ -->
         <div class="footer__group">
           <h3>Компания</h3>
           <div class="footer__links">
@@ -138,5 +153,9 @@
         <p>GreenCorp © 2021</p>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/efb7f6cc63.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

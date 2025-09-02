@@ -9,14 +9,37 @@ body {
     color: #213053;
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate__fadeInLeft,
+.animate__fadeInRight {
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
 .header {
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #95a5a6;
+    /* background-color: #95a5a6; */
     color: #2c3e50;
+    position: sticky;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 0 0 10px 10px;
 }
 
 a {
@@ -88,6 +111,11 @@ button:hover {
 .sun {
     width: 100px;
     height: 100px;
+    /* animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    animation: rotation 10s linear infinite;
 }
 
 .photo_panel {
@@ -102,7 +130,7 @@ button:hover {
     align-items: center;
     padding: 115px 0px;
     background-color: #fff;
-    background: url("img/back.png") no-repeat;
+    background: url("../img/back.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -129,14 +157,24 @@ button:hover {
     max-width: 550px;
 }
 
+.about-section__images {
+    position: relative;
+}
+
+.about-section__photo_sun {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
 /*Form Section*/
 
-.form{
-    margin:0;
+.form {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #1D263A;
+    background-color: #1D263A;
     color: #fff;
     padding-top: 115px;
     padding-bottom: 115px;
@@ -147,16 +185,16 @@ button:hover {
     max-width: 550px;
 }
 
-.form__title{
+.form__title {
     font-size: 48px;
 }
 
-.form_paragraph{
+.form_paragraph {
     font-size: 18px;
     opacity: 0.65;
 }
 
-.form__group{
+.form__group {
     display: flex;
     flex-direction: column;
 }
@@ -168,7 +206,8 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.form select, .form input {
+.form select,
+.form input {
     font-size: 18px;
     color: #213053;
     height: 60px;
@@ -184,11 +223,11 @@ button:hover {
 }
 
 select {
-  appearance: none;
+    appearance: none;
 }
 
 input {
-  outline: none;
+    outline: none;
 }
 
 /*Footer*/
@@ -198,29 +237,101 @@ input {
     font-weight: 600;
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: center;
 }
 
-.footer__copyright{
+.footer__copyright {
     text-align: center;
     margin-top: 40px;
     opacity: 0.5;
 }
 
-.footer__group{
+.footer__group {
     margin-right: 80px;
 }
+
 .footer__group h3 {
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
 }
 
-.footer__links{
+.footer__links {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     gap: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .header__logo img {
+        height: 20px;
+    }
+
+    .about-section {
+        padding: 50px 0px;
+    }
+
+    .form {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-section__title,
+    .form__title {
+        font-size: 36px;
+        line-height: 40px
+    }
+
+    .photo_panel {
+        width: 280px;
+    }
+
+    .sun {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+    }
+
+    .about-section__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .photo_panel {
+        width: 280px;
+    }
+
+    .sun {
+        width: 75px;
+        height: 75px;
+    }
 }
