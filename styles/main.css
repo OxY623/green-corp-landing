@@ -170,6 +170,57 @@ button:hover {
     align-self: flex-start;
 }
 
+/* Features section */
+.features {
+    background: #fff;
+    padding: 115px 60px;
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.card {
+    padding: 35px 40px 25px 40px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+}
+
+.card__title {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+.card__logo {
+    height: 100px;
+    width: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #eaeff9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:first-child>.card__logo {
+    color: #ffb406;
+}
+
+.card:nth-child(2)>.card__logo {
+    color: #ad1714;
+}
+
+.card:last-child>.card__logo {
+    color: #22a030;
+}
+
 /*Form Section*/
 
 .form {
@@ -309,9 +360,14 @@ input {
         height: 75px;
     }
 
-    .about-section{
+    .about-section {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .cards {
+        grid-template-columns: auto;
+        gap: 50px;
     }
 }
 
@@ -329,7 +385,7 @@ input {
         padding-bottom: 50px; */
     }
 
-    .about-section{
+    .about-section {
         padding-left: 20px;
         padding-right: 20px;
     }
