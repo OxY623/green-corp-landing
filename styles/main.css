@@ -382,23 +382,33 @@ button:hover {
 .form__group {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 }
 
 .form__group label {
     text-align: left;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
+
+/* .form__other-input {
+    margin-top: 15px;
+} */
 
 .form select,
 .form input {
     font-size: 18px;
     color: #213053;
     height: 60px;
-    padding: 0 2opx;
+    padding: 0px 20px;
     border-radius: 15px;
     border: none;
+    margin-top: 0;
+}
+
+.form select option {
+    padding-left: 15px;
 }
 
 .form__submit {
@@ -413,6 +423,11 @@ select {
 
 input {
     outline: none;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    color: gray;
 }
 
 /*Footer*/
